@@ -1,0 +1,113 @@
+@import "../../sass/modules/grid";
+
+.filter-container {
+  padding: 35px;
+  margin: 50px 55px 0 55px;
+  background-color: white;
+  @include md {
+    .col-4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.filter-buttons {
+  width: 197px;
+  height: 32px;
+  padding-left: 20px;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 2px solid #45413e;
+  background-color: white;
+  opacity: 0.5;
+  &:focus {
+    outline: none;
+  }
+}
+.col-4 {
+  span {
+    display: inline-block;
+    color: #45413e;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 55px;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 21px;
+}
+
+.flex__end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+}
+
+@include sm {
+  .filter-container {
+    margin: 0 15px;
+    padding: 10px;
+    .col-4 {
+      padding: 15px 0;
+      display: flex;
+      flex-basis: 100%;
+      min-width: 100%;
+      span {
+        width: 75px;
+      }
+    }
+    .margin-bottom {
+      margin: unset;
+    }
+  }
+
+  .filter-buttons {
+    width: 100%;
+  }
+}
+
+@include md {
+  span {
+    text-align: center;
+  }
+  .filter-container {
+    padding: 0 15px 15px 15px;
+    margin: 50px 30px 0 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .row_left_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .col-4 {
+      max-width: unset;
+      margin-top: 15px;
+      flex: 1;
+    }
+  }
+  .row_right_container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    .col-4 {
+      max-width: unset;
+      margin-top: 15px;
+      flex: 1;
+    }
+  }
+  .margin-bottom {
+    margin: 0;
+  }
+}

@@ -1,0 +1,117 @@
+@import "../sass/modules/colors";
+@import "../sass/modules/grid";
+
+// .cookie-middle {
+//   width: 1170px;
+//   margin-left: 55px;
+//   margin-bottom: 30px;
+//   border-radius: 10px;
+//   position: fixed;
+//   z-index: 200;
+//   bottom: 0;
+//   box-shadow: 0 0 5px black;
+//   background-color: white;
+// }
+
+.cookie-middle {
+  width: 1170px;
+  border-radius: 10px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 3% auto;
+  z-index: 200;
+  box-shadow: 0 0 5px black;
+  background-color: white;
+}
+
+.cookie-container {
+  padding: 24px 9px 24px 0;
+  .accept-button {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    width: 154px;
+    height: 37px;
+    border: 2px solid #d9d9d9;
+    border-radius: 20px;
+    background-color: $primaryColor;
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.close-cookie {
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  z-index: 1000;
+  color: gray;
+  position: absolute;
+  cursor: pointer;
+}
+
+.cookie-row {
+  flex-direction: column;
+  .col {
+    color: #45413e;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+.accept-col {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.cookie-header {
+  font-weight: 800px !important;
+  font-size: 16px !important;
+  color: $primaryColor !important;
+  margin-bottom: 10px;
+}
+
+.policy-page {
+  font-size: 14px;
+  color: $primaryColor;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+@include md {
+  .cookie-middle {
+    width: 700px;
+  }
+
+  .accept-col {
+    padding-top: 10px;
+  }
+}
+
+@include sm {
+  .cookie-middle {
+    width: 95%;
+    // margin-left: 14px;
+    .col-9 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .col-3 {
+      justify-content: unset;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-top: 10px;
+      margin-left: 7px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../sass/modules/grid";
+
+.billboard {
+  position: relative;
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+  }
+  .details {
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    width: 30%;
+    margin: auto;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+  }
+}
+
+@include sm {
+  .banner {
+    min-height: 185px;
+    max-height: 270px;
+  }
+  .billboard {
+    h1 {
+      font-size: 30px;
+      top: 20%;
+    }
+    .details {
+      width: 70%;
+      bottom: 60%;
+      margin: auto;
+    }
+  }
+}

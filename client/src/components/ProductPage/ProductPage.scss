@@ -1,0 +1,251 @@
+@import "../CategoryPage/CategoryPage.scss";
+@import "../sass/modules/colors";
+@import "../sass/modules/grid";
+
+.product-page {
+  min-height: calc(100vh - 433px);
+  padding: 0 55px;
+  background-color: $backgroundLight;
+}
+.product-header {
+  display: flex;
+  font-size: 48px;
+  font-weight: 800;
+  color: #45413e;
+  width: 100%;
+  margin: 0 0 55px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    border-top: 3px solid $lineDark;
+    margin: 0 40px 0 0;
+    flex: 1 0 20px;
+  }
+  &:after {
+    margin: 0 0 0 40px;
+  }
+}
+.product-container {
+  padding-bottom: 80px;
+  padding-top: 15px;
+  background-color: white;
+}
+.prize-header {
+  color: #45413e;
+  margin-bottom: -10px;
+  font-size: 48px;
+  font-weight: 800;
+  @include sm {
+    font-size: 31px;
+  }
+}
+
+.minus__button {
+  position: absolute;
+  font-size: 5px;
+  height: 40px;
+  cursor: pointer;
+  width: 20px;
+  left: 13%;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #999999;
+}
+
+.plus__button {
+  @extend .minus__button;
+  left: 70%;
+  padding-left: 0;
+}
+
+.quantity__button {
+  text-align: center;
+  font-size: 14px;
+  width: 108px;
+  background-color: white;
+  height: 36px;
+  padding: 0 10px;
+  border: 3px solid #e8e2d6;
+  border-radius: 20px;
+  &:focus {
+    outline: none;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.pick-color {
+  @extend .quantity__button;
+  margin: 40px 0 20px 0;
+  display: block;
+  height: 36px;
+  width: 152px;
+}
+
+.product-footer {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  width: 50%;
+  color: #b2b2b2;
+}
+
+.small-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-cart {
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  background-color: $primaryColor;
+  color: white;
+  border-radius: 30px;
+  border: solid 2px white;
+  margin: 0 0 30px 20px;
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.product-details {
+  color: #45413e;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.read-more-button {
+  color: $primaryColor;
+  cursor: pointer;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.select-col {
+  padding-left: 60px;
+}
+.scroll-top {
+  @extend .add-cart;
+  border: none;
+}
+
+@include sm {
+  .product-page {
+    padding: 0 15px;
+    .product-container {
+      margin: 0;
+      padding-bottom: 30px;
+      .product-select {
+        flex-direction: column;
+        .col-6 {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .small-images {
+          display: flex;
+          flex-direction: row;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .select-col {
+          .prize-header {
+            margin-top: 0;
+          }
+          padding-left: 0;
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    .product-details {
+      display: none;
+    }
+
+    ol {
+      padding: 30px 0 30px 0;
+      flex-wrap: nowrap;
+    }
+    .breadcrumb {
+      .active {
+        flex: 1;
+      }
+    }
+  }
+  .add-cart {
+    margin: 20px 0;
+  }
+  .product-footer {
+    width: 100%;
+    justify-content: start;
+    svg {
+      margin-left: 20px;
+    }
+  }
+  .minus__button {
+    left: 4%;
+  }
+  .plus__button {
+    left: 19%;
+  }
+  .adding__col {
+    display: flex;
+    flex-direction: column;
+  }
+  .pick-color {
+    margin: 30px 0 20px 0;
+  }
+}
+
+@include md {
+  .product-header {
+    font-size: 35px;
+  }
+  .product-page {
+    padding: 0 30px;
+  }
+  .add-cart {
+    margin: 20px 0 20px 20px;
+  }
+  .product-select {
+    .col-6 {
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%;
+    }
+    .col-1 {
+      align-items: center;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%;
+    }
+    .col-5 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }
+  .small-images {
+    img {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .pick-color {
+    margin: 0;
+  }
+  .color__col {
+    margin-top: 20px;
+  }
+}

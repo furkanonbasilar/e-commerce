@@ -1,0 +1,12 @@
+@import "../../sass/modules/grid";
+
+@include sm {
+  .slide {
+    display: flex;
+    flex-direction: column-reverse;
+    .carousel-indicators {
+      padding-top: 1rem;
+      position: static;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+@import "../../sass/modules/grid";
+
+.special-header {
+  color: #45413e;
+  text-transform: uppercase;
+  display: flex;
+  font-size: 24px;
+  font-weight: 800;
+  width: 100%;
+  padding: 2rem 0 1rem 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    border-top: 2px solid #e5e2df;
+    margin: 0 40px 0 0;
+    flex: 1 0 20px;
+  }
+  &:after {
+    margin: 0 0 0 40px;
+  }
+}
+.special-row {
+  padding-bottom: 60px;
+  .col {
+    padding: 0 30px 0 0;
+    &:last-child {
+      padding: 0;
+    }
+  }
+  @include md {
+    padding-bottom: 40px;
+    .col {
+      flex: 0 0 50%;
+      max-width: 50%;
+      &:nth-child(even) {
+        padding-right: 0;
+        padding-left: 30px;
+      }
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@include sm {
+  .special-row {
+    .col {
+      padding: 15px;
+    }
+  }
+  .mobile__special {
+    display: flex;
+    flex-direction: column-reverse;
+    .carousel-indicators {
+      padding-top: 1rem;
+      position: static;
+      margin-bottom: 0;
+      li {
+        background-color: black;
+        opacity: 0.3;
+      }
+      .active {
+        opacity: 1;
+      }
+    }
+  }
+  .product-header {
+    font-size: 31px;
+  }
+  .special-header {
+    font-size: 18px;
+    &:before {
+      margin-right: 20px;
+    }
+    &:after {
+      margin-left: 20px;
+    }
+  }
+}

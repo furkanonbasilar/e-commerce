@@ -1,0 +1,95 @@
+@import "../../sass/modules/grid";
+@import "../../sass/modules/colors";
+
+.feature {
+  h1 {
+    color: white;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  p {
+    color: white;
+    padding: 0.5rem 0 0 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.controllers {
+  text-align: center;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    &:after {
+      display: inline-block;
+      width: 15%;
+      content: "";
+      border-top: 3px solid white;
+      margin: 0 0 5px 15px;
+    }
+    &:before {
+      display: inline-block;
+      width: 15%;
+      content: "";
+      border-top: 3px solid white;
+      margin: 0 15px 5px 0;
+    }
+  }
+}
+
+.carousel-icon {
+  height: 38px;
+  width: 38px;
+  color: white;
+  background-color: #2d343a;
+  border: white;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.flexible {
+  margin-left: 25px;
+  .card {
+    display: inline-block;
+    width: 270px;
+    height: 296px;
+    margin-left: 30px;
+  }
+  .feature-title {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .feature-text {
+    color: $secondColor !important;
+    font-size: 14px;
+    font-weight: 800 !important;
+  }
+  .card-img-top {
+    height: 65%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+}
+
+@include md {
+  .feature-slider {
+    .carousel-inner {
+      margin-left: 40px;
+    }
+  }
+}

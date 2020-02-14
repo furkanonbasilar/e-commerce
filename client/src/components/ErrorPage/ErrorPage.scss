@@ -1,0 +1,156 @@
+@import "../sass/modules/grid";
+@import "../sass/modules/colors";
+
+$primaryColor: #84bc22;
+$backgroundColor: #f2edea;
+$lineColor: #e5e2df;
+
+.error-page {
+  background-color: $backgroundColor;
+  width: 100%;
+  min-height: calc(100vh - 433px);
+  padding: 40px 55px;
+  @include md {
+    padding-top: 0;
+  }
+  .breadcrumb {
+    justify-content: center;
+    padding-top: 1.5rem;
+    margin-bottom: -0.1rem;
+    background-color: $backgroundColor;
+    a {
+      color: $secondColor;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    span {
+      font-size: 13px;
+      font-weight: 400;
+    }
+  }
+  .breadcrumb-item.active {
+    color: #45413e;
+  }
+}
+.white-area {
+  position: relative;
+  margin-top: 20px;
+  padding: 70px 102px;
+  overflow: hidden;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -70px;
+    left: -60px;
+    background-image: url("../../assets/images/exclamation.jpg");
+    background-repeat: no-repeat;
+  }
+  background-color: white;
+}
+.ops-tag {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  color: $primaryColor;
+  font-size: 113px;
+  font-weight: 800;
+  line-height: 60px;
+}
+.error-header {
+  display: flex;
+  font-size: 48px;
+  font-weight: 800;
+  color: #45413e;
+  text-align: center;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    border-top: 3px solid $lineColor;
+    margin: 0 40px 0 0;
+    flex: 1 0 20px;
+  }
+  &:after {
+    margin: 0 0 0 40px;
+  }
+}
+.not-found {
+  font-size: 24px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+.error-code {
+  font-size: 16px;
+  font-weight: 400;
+}
+.go-homepage {
+  display: inline-block;
+  padding: 10px 0 50px 0;
+  color: $secondColor;
+}
+.search-bar {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  align-items: center;
+  border-radius: 40px;
+  border: solid 2px $lineColor;
+  background-color: white;
+  &:focus {
+    outline: none;
+  }
+}
+.padding__left {
+  padding-left: 80px;
+}
+
+@include sm {
+  .error-page {
+    padding: 15px 15px;
+  }
+  .white-area {
+    padding: 15px;
+  }
+  .col-8 {
+    padding: 0;
+    flex-basis: 100%;
+    min-width: 100%;
+    margin-top: 20px;
+  }
+  .error-header {
+    margin: 20px 15px;
+  }
+  .ops-tag {
+    justify-content: center;
+    margin: 60px 0;
+    font-size: 90px;
+    @include sm {
+      display: unset;
+    }
+  }
+}
+
+@include md {
+  .error-page {
+    padding: 40px 30px;
+  }
+  .col-4 {
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+  .col-8 {
+    flex-basis: 50%;
+    min-width: 50%;
+  }
+  .white-area {
+    padding: 30px 20px;
+  }
+  .padding__left {
+    padding-left: 50px;
+  }
+}

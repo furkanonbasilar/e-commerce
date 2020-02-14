@@ -1,0 +1,126 @@
+@import "../../sass/modules/grid";
+
+.card-title {
+  font-size: 16px;
+  text-align: center;
+  line-height: 18px;
+  margin-bottom: 0;
+  @include lg {
+    height: 40px;
+    width: 230px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+  @include md {
+    height: 40px;
+    width: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    h5 {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+  @include sm {
+    height: 40px;
+  }
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+
+.card-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.load-button {
+  width: 265px;
+  height: 40px;
+  position: relative;
+  background-color: #262a32;
+  color: white;
+  border-radius: 30px;
+  border: solid 2px white;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.padding-col {
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.margin-row {
+  margin-left: 25px;
+  margin-right: 55px;
+  @include sm {
+    margin: unset;
+    flex-direction: column;
+  }
+  @include md {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}
+
+.popular-header {
+  display: flex;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  width: 100%;
+  padding: 5rem 55px 2rem 55px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    border-top: 3px solid rgba(255, 255, 255, 0.1);
+    margin: 0 40px 0 0;
+    flex: 1 0 20px;
+  }
+  &:after {
+    margin: 0 0 0 40px;
+  }
+  @include sm {
+    font-size: 1.285rem;
+    padding: 2rem 15px 2rem 15px;
+    font-size: 1.285rem;
+    padding-top: 2rem;
+    &:before {
+      margin-right: 30px;
+    }
+    &:after {
+      margin-left: 30px;
+    }
+    .row-sm {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    .col-sm {
+      padding-left: 0;
+      padding-right: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+@include md {
+  .col-md {
+    flex: 0 0 50%;
+    min-width: 50%;
+  }
+}

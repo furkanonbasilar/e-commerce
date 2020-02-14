@@ -1,0 +1,383 @@
+@import "../sass/modules/grid";
+@import "../sass/modules/colors";
+
+
+.container {
+  height: 78px;
+  .navbar {
+    height: 100%;
+  }
+}
+
+.hover-header {
+  &:hover {
+    path {
+      fill: $secondColor;
+    }
+  }
+}
+
+#header {
+  height: 80px;
+  padding: 5px 55px 0 55px;
+  position: fixed;
+  top: 0px;
+  width: 1280px;
+  background: white;
+  z-index: 1030;
+  @include md {
+    width: 768px;
+  }
+  @include sm {
+    width: 100%;
+  }
+  align-content: center;
+  .navbar-light {
+    .navbar-nav {
+      .nav-link {
+        font-size: 14px;
+        color: #45413e;
+      }
+    }
+  }
+  border-bottom: 3px solid rgba(243, 240, 234, 0.5);
+}
+
+.collapse {
+  height: 100%;
+  @include sm {
+    height: 0;
+  }
+}
+
+.dropdown-menu {
+  background-color: #262a32;
+  // top: 96%;
+  top: 102%;
+  left: -251%;
+  min-width: 1280px;
+  min-height: 420px;
+  @include sm {
+    margin-top: 0;
+    padding-top: 0;
+    top: unset;
+    left: unset;
+    min-width: unset;
+    min-height: unset;
+    border: unset;
+  }
+  @include md {
+    min-width: 768px;
+    height: 700px;
+    left: -181%;
+    top: 102%;
+  }
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown__item {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  &:focus {
+    color: white;
+  }
+  @include sm {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    // @extend .header__items;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    height: 100%;
+    color: #45413e !important;
+    font-size: 14px;
+    display: flex;
+    @include sm {
+      // padding: 0;
+      // align-items: center;
+      // justify-content: center;
+      // flex: 1;
+      // height: 100%;
+      // color: #45413e !important;
+      // font-size: 14px;
+      // display: flex;
+      width: 100%;
+      height: 40px;
+      justify-content: flex-start;
+      flex: 0 0 auto;
+    }
+    &:hover {
+      color: white;
+      @include sm {
+        &:hover {
+          color: unset;
+          border: unset;
+        }
+      }
+    }
+    &:after {
+      margin-left: 1rem;
+      opacity: 0.3;
+    }
+  }
+
+  @include sm {
+    flex: unset;
+    display: unset;
+  }
+}
+
+.dropdown__hover {
+  color: white !important;
+  background-color: #262a32;
+  border-bottom: solid $secondColor 4px;
+  .dropdown-toggle {
+    color: white !important;
+  }
+  @include sm {
+    color: unset;
+    border: unset;
+  }
+}
+
+.header__items {
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+  color: #45413e !important;
+  font-size: 14px;
+  display: flex;
+  &:hover,
+  &:focus {
+    color: white !important;
+    background-color: #262a32;
+    border-bottom: solid $secondColor 4px;
+    @include sm {
+      color: unset;
+      border: unset;
+    }
+  }
+}
+
+.header-1 {
+  height: 100%;
+  padding-right: 50px;
+  flex: 3;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-2 {
+  flex: 2;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.__logo {
+  margin-right: 150px;
+}
+
+.logo {
+  position: relative;
+
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.brand {
+  cursor: pointer;
+}
+
+.category__header {
+  color: white;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.category__item {
+  color: white;
+  font-size: 16px;
+  .first-dropdown-menu {
+    padding: 0;
+    padding: 0;
+  }
+  @include sm {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  @include md {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.radius {
+  border-radius: 10px;
+}
+
+.alerts {
+  position: relative;
+  .heart {
+    font-size: 10px;
+    position: absolute;
+    background-color: white;
+    color: $primaryColor;
+    border: solid 2px $primaryColor;
+    left: 20px;
+    top: -3px;
+  }
+  .bag {
+    left: 19px;
+    @extend .heart;
+  }
+  &:hover {
+    .icon {
+      fill: $secondColor;
+    }
+  }
+}
+.mobile-image {
+  margin-bottom: 25px;
+}
+
+.light-dropdown {
+  a {
+    opacity: 0.5;
+    color: #45413e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .dropdown-menu {
+    left: unset;
+    min-width: unset;
+    min-height: auto;
+    background-color: white;
+    top: 103%;
+
+    right: 5px;
+  }
+}
+
+.category_sale {
+  padding-right: 159px;
+}
+
+@include sm {
+  .navbar {
+    .logo {
+      display: none;
+    }
+    .navbar-brand {
+      margin-right: 0;
+    }
+    .toggle__button {
+      padding: 1rem 1rem;
+      position: absolute;
+      left: 16px;
+      width: 56px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .header-1 {
+      z-index: 500;
+      position: absolute;
+      padding: 0 15px;
+      width: 100%;
+      height: auto;
+      top: 78px;
+      left: 0px;
+      background-color: #262a33;
+      justify-content: unset;
+      align-items: baseline;
+      .header__items {
+        width: 100%;
+        height: 40px;
+        justify-content: baseline;
+      }
+      div,
+      a {
+        color: white !important;
+      }
+    }
+    .__logo {
+      margin-right: 0;
+    }
+  }
+  .collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    flex-basis: unset;
+    flex-grow: unset;
+    transition: unset;
+  }
+  #header {
+    padding: unset;
+    display: flex;
+    justify-content: center;
+  }
+  .light-dropdown {
+    display: none;
+  }
+  .header__items {
+    justify-content: flex-start;
+    flex: 0 0 auto;
+  }
+  .header-2 {
+    display: none;
+  }
+}
+
+@include md {
+  #header {
+    padding: 0;
+  }
+  .header-1 {
+    padding-right: 10px;
+  }
+  .__logo {
+    margin-right: 90px;
+  }
+  .light-dropdown {
+    display: none;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding: 0;
+  }
+  .header-2 {
+    flex: 3;
+  }
+  .dropdown-menu {
+    .col-9 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  .category__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col_image {
+    margin-top: 30px;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .category_sale {
+    padding-right: 116px;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../sass/modules/colors";
+
+.header {
+  min-width: 100%;
+  border-bottom: 2px solid white;
+  background-color: #262a32;
+}
+
+.navigation {
+  padding: 0 15px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+
+  li {
+    padding: 20px 0;
+    text-align: center;
+    flex: 1;
+    &:active {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.mobile-alerts {
+  position: relative;
+  span {
+    position: absolute;
+    background-color: #262a32;
+    color: $secondColor;
+    border: solid 2px $secondColor;
+    left: 22px;
+    top: -8px;
+  }
+  &:hover {
+    .icon {
+      fill: $primaryColor;
+    }
+  }
+}
+
+.header-icon {
+  fill: #86888d;
+}

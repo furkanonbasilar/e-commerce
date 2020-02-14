@@ -1,0 +1,68 @@
+@import "../../sass/modules/grid";
+
+.benefits {
+  background-color: #45413e;
+  padding: 50px 85px 50px 50px;
+}
+
+.static-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.text {
+  color: #868380;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@include sm {
+  .benefits {
+    padding: 30px 0;
+
+    .row {
+      flex-direction: row;
+    }
+    .feature-row {
+      padding-left: 55px;
+    }
+    .feature-row-reverse {
+      flex-direction: row-reverse;
+      padding-right: 55px;
+      .col-9 {
+        padding-left: 15px;
+      }
+    }
+    .col-3 {
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+    }
+    .col-9 {
+      padding-left: 50px;
+    }
+    .col-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0 0 30px 0;
+    }
+  }
+}
+
+@include md {
+  .benefits {
+    padding: 20px;
+    .col-4 {
+      flex-basis: 100%;
+      min-width: 100%;
+    }
+    .col-3 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

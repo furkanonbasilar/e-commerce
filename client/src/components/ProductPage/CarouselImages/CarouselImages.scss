@@ -1,0 +1,14 @@
+.product-slider {
+  display: flex;
+  width: 100%;
+  .carousel-indicators {
+    margin-bottom: 0;
+    li {
+      background-color: black;
+      opacity: 0.3;
+    }
+    .active {
+      opacity: 1;
+    }
+  }
+}

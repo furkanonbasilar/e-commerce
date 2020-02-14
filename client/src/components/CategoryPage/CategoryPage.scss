@@ -1,0 +1,112 @@
+@import "../sass/modules/grid";
+@import "../sass/modules/colors";
+
+$backgroundColor: #f2edea;
+
+.category {
+  background-color: $backgroundColor;
+  width: 100%;
+  min-height: calc(100vh - 433px);
+  .service {
+    display: flex;
+    color: #45413e;
+    font-size: 48px;
+    font-weight: 800;
+    width: 100%;
+    padding: 0 55px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:before,
+    &:after {
+      content: "";
+      border-top: 3px solid #f8f6f4;
+      margin: 0 20px 0 0;
+      flex: 1 0 20px;
+    }
+    &:after {
+      margin: 0 0 0 20px;
+    }
+    @include md {
+      padding: 0 30px;
+    }
+  }
+}
+
+.result {
+  text-align: center;
+  margin-top: 20px;
+  color: #45413e;
+  font-size: 14px;
+  font-weight: 400;
+  .span {
+    font-size: 16px;
+  }
+}
+
+.hide {
+  color: $primaryColor;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.breadcrumb {
+  justify-content: center;
+  padding-top: 1.5rem;
+  margin-bottom: -0.1rem;
+  background-color: $backgroundColor;
+  a {
+    color: $secondColor;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  span {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.breadcrumb-item.active {
+  color: #45413e;
+}
+
+.category-page {
+  .popular-header {
+    display: none;
+  }
+  .load-button {
+    font-size: 14px;
+    font-weight: 400;
+    width: 154px;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    height: 37px;
+    border: 2px solid #d9d9d9;
+    background-color: $primaryColor;
+    svg {
+      display: none;
+    }
+  }
+  .card-text {
+    font-weight: 700;
+    color: #bdc3c7;
+  }
+}
+
+@include sm {
+  .service {
+    font-size: 31px !important;
+    padding: 0 15px !important;
+  }
+  .load-button {
+    margin-top: 45px !important;
+    margin-bottom: 45px !important;
+  }
+  .row-sm {
+    .col-3 {
+      flex-basis: 100%;
+      min-width: 100%;
+      padding: 0;
+    }
+    padding: 0 15px;
+  }
+}

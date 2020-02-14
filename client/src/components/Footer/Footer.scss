@@ -1,0 +1,112 @@
+@import "../sass/modules/grid";
+
+p {
+  font-size: 13px;
+}
+
+.contact a {
+  color: #45413e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.catagories a {
+  opacity: 0.7;
+  color: #45413e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.titles {
+  a {
+    opacity: 1;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.copyright {
+  color: #45413e;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 0;
+}
+
+.copyright-reserved {
+  @extend .copyright;
+  margin-bottom: 30px;
+}
+
+.footer {
+  padding: 30px 35px;
+  .col-9 {
+    max-width: 67%;
+    flex-basis: 67%;
+  }
+  .list__col {
+    flex-basis: 12%;
+    max-width: 12%;
+  }
+  .col_copyright {
+    max-width: 20%;
+    flex-basis: 20%;
+  }
+
+  .col-8 {
+    padding-left: 80px;
+  }
+  .titles {
+    margin-bottom: 7px;
+  }
+}
+
+.list-items {
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+  li {
+    display: inline;
+    padding-right: 20px;
+  }
+}
+
+.category__padding {
+  padding-top: 38px;
+}
+
+.list__col {
+  padding: 0;
+}
+
+.col__copyright {
+  padding: 0;
+}
+
+.adress {
+  line-height: normal;
+  padding-bottom: 15px;
+}
+
+.contact-osf {
+  padding-bottom: 15px;
+}
+
+@include md {
+  .footer {
+    padding: 30px 20px;
+  }
+  .list__col {
+    text-align: center;
+  }
+  .list-items {
+    li {
+      display: block;
+      padding: 0;
+    }
+  }
+}

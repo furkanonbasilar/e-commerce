@@ -1,0 +1,55 @@
+@import "../../sass/modules/colors";
+@import "../../sass/modules/grid";
+
+.product-details {
+  background-color: white;
+}
+
+.details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-information {
+  color: white;
+  padding: 70px 110px 80px 70px;
+  background-color: $backgroundDark;
+  @include md {
+    padding: 40px;
+  }
+}
+
+.hover__detail {
+  cursor: pointer;
+  margin: 0;
+  padding: 16px 50px;
+  color: #bdc3c7;
+  font-size: 24px;
+  font-weight: 800;
+  &:hover {
+    color: #262a33;
+  }
+}
+
+.background__dark {
+  cursor: pointer;
+  margin: 0;
+  padding: 16px 50px;
+  color: #bdc3c7;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #262a33;
+}
+
+@include md {
+  .hover__detail {
+    text-align: center;
+  }
+  .background__dark {
+    text-align: center;
+  }
+}

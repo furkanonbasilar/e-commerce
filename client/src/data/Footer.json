@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "CONTACT",
+    "column": [
+      "Headquarters:",
+      "5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6 ",
+      "contact@osf-global.com",
+      "+1 (888) 548-4344"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "CATEGORIEST",
+    "column": [
+      "Home",
+      "Jewelry",
+      "Kids & Baby",
+      "Men's Fashion",
+      "Mobile",
+      "Motorcycles",
+      "Movies",
+      "Music",
+      "Sport",
+      "Toys",
+      "Travel",
+      "Women's Fashion",
+      "Categories",
+      "Alcohol",
+      "Art",
+      " Books",
+      "Drink",
+      "Electronics"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "ABOUT",
+    "column": ["About us", "Delivery", "Testimonials", "Contact"]
+  }
+]

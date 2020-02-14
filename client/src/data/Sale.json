@@ -1,0 +1,28 @@
+[
+  {
+    "id": 0,
+    "column": [
+      "Motorcycle",
+      "Movies",
+      "Music",
+      " Office",
+      "Pets",
+      "Romantic",
+      "Sport",
+      "Toys"
+    ]
+  },
+  {
+    "id": 1,
+    "column": [
+      "Accessories",
+      "Alcohol",
+      "Art",
+      "Books",
+      "Drink",
+      "Electronics",
+      "Flowers & Plants",
+      "Food"
+    ]
+  }
+]

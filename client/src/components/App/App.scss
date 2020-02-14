@@ -1,0 +1,25 @@
+@import "../sass/modules/grid";
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+body {
+  padding-top: 80px;
+}
+
+@include lg {
+  .custom-container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+@include md {
+  .custom-container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}

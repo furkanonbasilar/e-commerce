@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "header": "Control and manage any device with cloud solutions",
+    "details": "Improve business performance and the user experience with the right mix of IoT technology and processes doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed",
+    "classNames": "left-pic",
+    "images": "/images/slider1.jpg"
+  },
+  {
+    "id": 1,
+    "header": "Control and manage any device with cloud solutions",
+    "details": "Improve business performance and the user experience with the right mix of IoT technology and processes",
+    "classNames": "center-pic",
+    "images": "/images/slider2.jpg"
+  },
+  {
+    "id": 2,
+    "header": "Control and manage any device with cloud solutions",
+    "details": "Improve business performance and the user experience with the right mix of IoT technology and processes",
+    "classNames": "right-pic",
+    "images": "/images/slider3.jpg"
+  }
+]

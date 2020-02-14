@@ -1,0 +1,28 @@
+[
+  {
+    "id": 0,
+    "column": [
+      "Accessories",
+      "Alcohol",
+      "Art",
+      "Books",
+      "Drink",
+      "Electronics",
+      "Flowers & Plants",
+      "Food"
+    ]
+  },
+  {
+    "id": 1,
+    "column": [
+      "Gadgets",
+      "Garden",
+      "Grocery",
+      "Home",
+      "Jewelry",
+      "Kids & Baby",
+      "Men's Fashion",
+      "Mobile"
+    ]
+  }
+]

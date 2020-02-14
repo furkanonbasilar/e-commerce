@@ -1,0 +1,19 @@
+@import "../../sass/modules/colors";
+
+.empty-cart {
+  min-height: calc(80vh - 433px);
+  background-color: #f2edea;
+  padding: 70px 100px 100px 100px;
+}
+
+.empty-header {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sad-face {
+  text-align: center;
+  margin-top: 30px;
+}
